@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Searchable select -->
+  <section>
+    <input list="brow">
+    <datalist id="brow">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>  
+  </section>
+
+  <!-- Dialogs -->
+<dialog id="favDialog">
+  <form method="dialog">
+    <section>
+      <p><label for="favAnimal">Favorite animal:</label>
+      <select id="favAnimal">
+        <option></option>
+        <option>Brine shrimp</option>
+        <option>Red panda</option>
+        <option>Spider monkey</option>
+      </select></p>
+    </section>
+    <menu>
+      <button id="cancel" type="reset">Cancel</button>
+      <button type="submit">Confirm</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="updateDetails" onclick="favDialog.showModal()">Update details</button>
+</menu>
+
+<!-- Progress bar -->
+<label for="file">File progress:</label>
+
+<progress id="file" max="100" value="50"> </progress>
+
+<!-- Acordion -->
+<details>
+  <summary>How awesome is the details element?</summary>
+  So awesome!
+</details>
+
+<!-- Keyboard  -->
+<input type="text" name="zip" inputmode="numeric">
+<input type="text" x-inputmode="numeric">
+
+<!-- Color picker -->
+<input type="color">
+
+<!-- Content editable  -->
+<label contenteditable="true">Example Label</label>.
+
+</body>
+</html>
